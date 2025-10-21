@@ -60,7 +60,7 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n is equal the input, that loops depending on n times
   public static int computeFactorial(int n) {
     int result = 1;
     for(int i = 1; i <= n; i++) {
