@@ -6,7 +6,7 @@ import java.util.Set;
 public class Main {
 
   // The time complexity is:
-  // On(n^2) where n = x in this case.
+  // O(n^2) where n = x in this case.
   public static void timesTable(int x) {
     for(int i = 1; i <= x; i++) {
         for(int j = 1; j <= x; j++) {
@@ -17,7 +17,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // O(n) 
+  // O(n) n = length of letters.
   public static void printLetters(String word) {
     char[] letters = word.toCharArray();
 
@@ -27,7 +27,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(1) because its looping though bannedPasswords which is a constant of 3
   public static boolean isBanned(String password) {
     String[] bannedPasswords = {"password", "hello", "qwerty"};
     boolean banned = false;
