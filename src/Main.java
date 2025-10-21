@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class Main {
@@ -173,9 +174,14 @@ public class Main {
   // Write this method to efficiently return the corresponding email or "Person not found" if appropriate
   // assume that each String is bounded by a constant length
   // What is the time complexity of your solution?
-  // YOUR ANSWER HERE
+  // O(n) where n equals the size of the map
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
-    return null;
+    for(Map.Entry<String, String> entry : namesToEmails.entrySet()){
+      if (entry.getKey().equals(queryName)) {
+        return entry.getValue();
+      }
+    }
+    return "Person not found";
   }
 
   // What is the time complexity of this method?
